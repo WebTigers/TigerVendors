@@ -1,30 +1,34 @@
 {
   "schema": "tiger.registry/v1",
-
   "type": "sdk",
   "slug": "tiger-sdk-aws",
   "module": "Tiger AWS PHP SDK",
   "vendor": "WebTigers",
-
   "repository": "https://github.com/WebTigers/TigerSdkAws",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-
   "version": "3.389.0",
   "ref": "3.389.0",
-
-  "logo": null,
-
+  "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/media/logo.jpg",
   "description": "Adds the AWS SDK for PHP so Tiger can store media in Amazon S3 — with no Composer needed on the server. Install it, activate it, then choose Amazon S3 in Settings → Media → Storage. Mutually exclusive with the Google Cloud and Azure SDK providers (one cloud SDK at a time).",
   "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/TIGER.md",
-
-  "keywords": ["sdk", "aws", "s3", "storage", "media"],
+  "keywords": [
+    "sdk",
+    "aws",
+    "s3",
+    "storage",
+    "media"
+  ],
   "category": "Developer",
   "license": "MIT",
-
-  "pricing": { "model": "free", "pro_url": null },
-  "requires": { "tiger": ">=0.5", "php": ">=8.1" },
-
+  "pricing": {
+    "model": "free",
+    "pro_url": null
+  },
+  "requires": {
+    "tiger": ">=0.5",
+    "php": ">=8.1"
+  },
   "review": {
     "status": "accepted",
     "reviewed_ref": "3.389.0",
