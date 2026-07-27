@@ -9,14 +9,31 @@
   "contact": "support@webtigers.com",
   "version": "1.5.4",
   "ref": "1.5.4",
-  "logo": null,
+  "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkAzure/main/media/logo.jpg",
   "description": "Adds the Azure Storage Blob SDK so Tiger can store media in Azure Blob Storage — with no Composer needed on the server. Install it, activate it, then choose Azure Blob Storage in Settings → Media → Storage. Mutually exclusive with the AWS and Google Cloud SDK providers (one cloud SDK at a time).",
   "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAzure/main/TIGER.md",
-  "keywords": ["sdk", "azure", "blob", "storage", "media"],
+  "keywords": [
+    "sdk",
+    "azure",
+    "blob",
+    "storage",
+    "media"
+  ],
   "category": "Developer",
   "license": "MIT",
-  "pricing": { "model": "free", "pro_url": null },
-  "requires": { "tiger": ">=0.5", "php": ">=8.1" },
-  "review": { "status": "accepted", "reviewed_ref": "1.5.4", "reviewed_at": "2026-07-27", "reviewer": "webtigers",
-    "notes": "First-party provider module. Vendors microsoft/azure-storage-blob (MIT) as a release-asset bundle; ships no controllers/routes — Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Google Cloud SDK providers via module.json conflict." }
+  "pricing": {
+    "model": "free",
+    "pro_url": null
+  },
+  "requires": {
+    "tiger": ">=0.5",
+    "php": ">=8.1"
+  },
+  "review": {
+    "status": "accepted",
+    "reviewed_ref": "1.5.4",
+    "reviewed_at": "2026-07-27",
+    "reviewer": "webtigers",
+    "notes": "First-party provider module. Vendors microsoft/azure-storage-blob (MIT) as a release-asset bundle; ships no controllers/routes — Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Google Cloud SDK providers via module.json conflict."
+  }
 }
