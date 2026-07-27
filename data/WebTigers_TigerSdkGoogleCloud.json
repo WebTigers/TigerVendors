@@ -9,14 +9,32 @@
   "contact": "support@webtigers.com",
   "version": "1.51.0",
   "ref": "1.51.0",
-  "logo": null,
+  "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkGoogleCloud/main/media/logo.jpg",
   "description": "Adds the Google Cloud Storage SDK so Tiger can store media in Google Cloud Storage — with no Composer needed on the server. Install it, activate it, then choose Google Cloud Storage in Settings → Media → Storage. Mutually exclusive with the AWS and Azure SDK providers (one cloud SDK at a time).",
   "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkGoogleCloud/main/TIGER.md",
-  "keywords": ["sdk", "gcs", "google", "cloud", "storage", "media"],
+  "keywords": [
+    "sdk",
+    "gcs",
+    "google",
+    "cloud",
+    "storage",
+    "media"
+  ],
   "category": "Developer",
   "license": "MIT",
-  "pricing": { "model": "free", "pro_url": null },
-  "requires": { "tiger": ">=0.5", "php": ">=8.1" },
-  "review": { "status": "accepted", "reviewed_ref": "1.51.0", "reviewed_at": "2026-07-27", "reviewer": "webtigers",
-    "notes": "First-party provider module. Vendors google/cloud-storage (Apache-2.0) as a release-asset bundle; ships no controllers/routes — Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Azure SDK providers via module.json conflict." }
+  "pricing": {
+    "model": "free",
+    "pro_url": null
+  },
+  "requires": {
+    "tiger": ">=0.5",
+    "php": ">=8.1"
+  },
+  "review": {
+    "status": "accepted",
+    "reviewed_ref": "1.51.0",
+    "reviewed_at": "2026-07-27",
+    "reviewer": "webtigers",
+    "notes": "First-party provider module. Vendors google/cloud-storage (Apache-2.0) as a release-asset bundle; ships no controllers/routes — Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Azure SDK providers via module.json conflict."
+  }
 }
