@@ -1,7 +1,7 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-07-27T17:15:41+00:00",
-    "count": 5,
+    "generated_at": "2026-07-27T19:08:31+00:00",
+    "count": 7,
     "modules": [
         {
             "schema": "tiger.registry/v1",
@@ -120,6 +120,85 @@
                 "reviewed_at": "2026-07-27",
                 "reviewer": "webtigers",
                 "notes": "First-party provider module. Vendors aws/aws-sdk-php (Apache-2.0) as a release-asset bundle; ships no controllers/routes \u2014 its Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the Google Cloud / Azure SDK providers via module.json \"conflict\"."
+            }
+        },
+        {
+            "schema": "tiger.registry/v1",
+            "type": "sdk",
+            "slug": "tiger-sdk-azure",
+            "module": "Tiger Azure PHP SDK",
+            "vendor": "WebTigers",
+            "repository": "https://github.com/WebTigers/TigerSdkAzure",
+            "website": "https://webtigers.com",
+            "contact": "support@webtigers.com",
+            "version": "1.5.4",
+            "ref": "1.5.4",
+            "logo": null,
+            "description": "Adds the Azure Storage Blob SDK so Tiger can store media in Azure Blob Storage \u2014 with no Composer needed on the server. Install it, activate it, then choose Azure Blob Storage in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the AWS and Google Cloud SDK providers (one cloud SDK at a time).",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAzure/main/TIGER.md",
+            "keywords": [
+                "sdk",
+                "azure",
+                "blob",
+                "storage",
+                "media"
+            ],
+            "category": "Developer",
+            "license": "MIT",
+            "pricing": {
+                "model": "free",
+                "pro_url": null
+            },
+            "requires": {
+                "tiger": ">=0.5",
+                "php": ">=8.1"
+            },
+            "review": {
+                "status": "accepted",
+                "reviewed_ref": "1.5.4",
+                "reviewed_at": "2026-07-27",
+                "reviewer": "webtigers",
+                "notes": "First-party provider module. Vendors microsoft/azure-storage-blob (MIT) as a release-asset bundle; ships no controllers/routes \u2014 Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Google Cloud SDK providers via module.json conflict."
+            }
+        },
+        {
+            "schema": "tiger.registry/v1",
+            "type": "sdk",
+            "slug": "tiger-sdk-googlecloud",
+            "module": "Tiger Google Cloud PHP SDK",
+            "vendor": "WebTigers",
+            "repository": "https://github.com/WebTigers/TigerSdkGoogleCloud",
+            "website": "https://webtigers.com",
+            "contact": "support@webtigers.com",
+            "version": "1.51.0",
+            "ref": "1.51.0",
+            "logo": null,
+            "description": "Adds the Google Cloud Storage SDK so Tiger can store media in Google Cloud Storage \u2014 with no Composer needed on the server. Install it, activate it, then choose Google Cloud Storage in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the AWS and Azure SDK providers (one cloud SDK at a time).",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkGoogleCloud/main/TIGER.md",
+            "keywords": [
+                "sdk",
+                "gcs",
+                "google",
+                "cloud",
+                "storage",
+                "media"
+            ],
+            "category": "Developer",
+            "license": "MIT",
+            "pricing": {
+                "model": "free",
+                "pro_url": null
+            },
+            "requires": {
+                "tiger": ">=0.5",
+                "php": ">=8.1"
+            },
+            "review": {
+                "status": "accepted",
+                "reviewed_ref": "1.51.0",
+                "reviewed_at": "2026-07-27",
+                "reviewer": "webtigers",
+                "notes": "First-party provider module. Vendors google/cloud-storage (Apache-2.0) as a release-asset bundle; ships no controllers/routes \u2014 Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the AWS / Azure SDK providers via module.json conflict."
             }
         },
         {
