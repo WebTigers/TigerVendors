@@ -1,7 +1,7 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-07-17T08:07:34+00:00",
-    "count": 4,
+    "generated_at": "2026-07-27T17:15:41+00:00",
+    "count": 5,
     "modules": [
         {
             "schema": "tiger.registry/v1",
@@ -81,6 +81,45 @@
                 "reviewed_at": "2026-07-15",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; theme.json + slug match (theme-grey-mist); TIGER.md present; MIT; release v0.7.0-beta present. Directory media (logo + hero) in media/. Screenshots gallery to follow."
+            }
+        },
+        {
+            "schema": "tiger.registry/v1",
+            "type": "sdk",
+            "slug": "tiger-sdk-aws",
+            "module": "Tiger AWS PHP SDK",
+            "vendor": "WebTigers",
+            "repository": "https://github.com/WebTigers/TigerSdkAws",
+            "website": "https://webtigers.com",
+            "contact": "support@webtigers.com",
+            "version": "3.389.0",
+            "ref": "3.389.0",
+            "logo": null,
+            "description": "Adds the AWS SDK for PHP so Tiger can store media in Amazon S3 \u2014 with no Composer needed on the server. Install it, activate it, then choose Amazon S3 in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the Google Cloud and Azure SDK providers (one cloud SDK at a time).",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/TIGER.md",
+            "keywords": [
+                "sdk",
+                "aws",
+                "s3",
+                "storage",
+                "media"
+            ],
+            "category": "Developer",
+            "license": "MIT",
+            "pricing": {
+                "model": "free",
+                "pro_url": null
+            },
+            "requires": {
+                "tiger": ">=0.5",
+                "php": ">=8.1"
+            },
+            "review": {
+                "status": "accepted",
+                "reviewed_ref": "3.389.0",
+                "reviewed_at": "2026-07-27",
+                "reviewer": "webtigers",
+                "notes": "First-party provider module. Vendors aws/aws-sdk-php (Apache-2.0) as a release-asset bundle; ships no controllers/routes \u2014 its Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the Google Cloud / Azure SDK providers via module.json \"conflict\"."
             }
         },
         {
