@@ -1,6 +1,6 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-07-27T19:08:31+00:00",
+    "generated_at": "2026-07-27T19:30:26+00:00",
     "count": 7,
     "modules": [
         {
@@ -94,7 +94,7 @@
             "contact": "support@webtigers.com",
             "version": "3.389.0",
             "ref": "3.389.0",
-            "logo": null,
+            "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/media/logo.jpg",
             "description": "Adds the AWS SDK for PHP so Tiger can store media in Amazon S3 \u2014 with no Composer needed on the server. Install it, activate it, then choose Amazon S3 in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the Google Cloud and Azure SDK providers (one cloud SDK at a time).",
             "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/TIGER.md",
             "keywords": [
@@ -133,7 +133,7 @@
             "contact": "support@webtigers.com",
             "version": "1.5.4",
             "ref": "1.5.4",
-            "logo": null,
+            "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkAzure/main/media/logo.jpg",
             "description": "Adds the Azure Storage Blob SDK so Tiger can store media in Azure Blob Storage \u2014 with no Composer needed on the server. Install it, activate it, then choose Azure Blob Storage in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the AWS and Google Cloud SDK providers (one cloud SDK at a time).",
             "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAzure/main/TIGER.md",
             "keywords": [
@@ -172,7 +172,7 @@
             "contact": "support@webtigers.com",
             "version": "1.51.0",
             "ref": "1.51.0",
-            "logo": null,
+            "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkGoogleCloud/main/media/logo.jpg",
             "description": "Adds the Google Cloud Storage SDK so Tiger can store media in Google Cloud Storage \u2014 with no Composer needed on the server. Install it, activate it, then choose Google Cloud Storage in Settings \u2192 Media \u2192 Storage. Mutually exclusive with the AWS and Azure SDK providers (one cloud SDK at a time).",
             "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkGoogleCloud/main/TIGER.md",
             "keywords": [
