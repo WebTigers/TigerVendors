@@ -1,30 +1,34 @@
 {
   "schema": "tiger.registry/v1",
-
-  "type": "code",
+  "type": "developer",
   "slug": "code-utils",
   "module": "Tiger Utility Snippets",
   "vendor": "WebTigers",
-
   "repository": "https://github.com/WebTigers/TigerCodeSnippets",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-
   "version": "0.1.0-beta",
   "ref": "v0.1.0-beta",
-
   "logo": "media/logo.jpg",
-
   "description": "A pack of small, dependency-free PHP helper snippets for the Code Area — slug(), human_bytes(), time_ago() and friends. Install it, read the source, and activate the ones you want.",
   "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerCodeSnippets/v0.1.0-beta/TIGER.md",
-
-  "keywords": ["code", "snippets", "helpers", "utilities", "php"],
-  "category": "Developer",
+  "keywords": [
+    "code",
+    "snippets",
+    "helpers",
+    "utilities",
+    "php"
+  ],
+  "category": "snippets",
   "license": "MIT",
-
-  "pricing": { "model": "free", "pro_url": null },
-  "requires": { "tiger": ">=0.5", "php": ">=8.1" },
-
+  "pricing": {
+    "model": "free",
+    "pro_url": null
+  },
+  "requires": {
+    "tiger": ">=0.5",
+    "php": ">=8.1"
+  },
   "review": {
     "status": "accepted",
     "reviewed_ref": "v0.1.0-beta",

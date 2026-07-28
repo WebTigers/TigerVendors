@@ -1,6 +1,6 @@
 {
   "schema": "tiger.registry/v1",
-  "type": "sdk",
+  "type": "developer",
   "slug": "tiger-sdk-azure",
   "module": "Tiger Azure PHP SDK",
   "vendor": "WebTigers",
@@ -19,7 +19,7 @@
     "storage",
     "media"
   ],
-  "category": "Developer",
+  "category": "sdks",
   "license": "MIT",
   "pricing": {
     "model": "free",

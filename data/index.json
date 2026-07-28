@@ -1,7 +1,131 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-07-27T19:30:26+00:00",
+    "generated_at": "2026-07-28T08:52:14+00:00",
     "count": 7,
+    "taxonomy": {
+        "types": [
+            {
+                "id": "theme",
+                "label": "Themes",
+                "icon": "fa-palette",
+                "order": 10,
+                "blurb": "The look & feel \u2014 a whole view layer."
+            },
+            {
+                "id": "app",
+                "label": "Apps",
+                "icon": "fa-cube",
+                "order": 20,
+                "blurb": "Features & products you add to your site."
+            },
+            {
+                "id": "developer",
+                "label": "Developer",
+                "icon": "fa-code",
+                "order": 30,
+                "blurb": "SDKs, code snippets, libraries & dev tools."
+            }
+        ],
+        "categories": [
+            {
+                "id": "commerce",
+                "label": "Commerce",
+                "types": [
+                    "app"
+                ],
+                "order": 10
+            },
+            {
+                "id": "marketing",
+                "label": "Marketing",
+                "types": [
+                    "app"
+                ],
+                "order": 20
+            },
+            {
+                "id": "membership",
+                "label": "Membership",
+                "types": [
+                    "app"
+                ],
+                "order": 30
+            },
+            {
+                "id": "content",
+                "label": "Content",
+                "types": [
+                    "app"
+                ],
+                "order": 40
+            },
+            {
+                "id": "crm",
+                "label": "CRM & Support",
+                "types": [
+                    "app"
+                ],
+                "order": 50
+            },
+            {
+                "id": "security",
+                "label": "Security",
+                "types": [
+                    "app"
+                ],
+                "order": 60
+            },
+            {
+                "id": "operations",
+                "label": "Operations",
+                "types": [
+                    "app"
+                ],
+                "order": 70
+            },
+            {
+                "id": "ai",
+                "label": "AI",
+                "types": [
+                    "app"
+                ],
+                "order": 80
+            },
+            {
+                "id": "integrations",
+                "label": "Integrations",
+                "types": [
+                    "app",
+                    "developer"
+                ],
+                "order": 90
+            },
+            {
+                "id": "sdks",
+                "label": "SDKs",
+                "types": [
+                    "developer"
+                ],
+                "order": 100
+            },
+            {
+                "id": "snippets",
+                "label": "Snippets",
+                "types": [
+                    "developer"
+                ],
+                "order": 110
+            },
+            {
+                "id": "tools",
+                "label": "Tools",
+                "types": [
+                    "developer"
+                ],
+                "order": 120
+            }
+        ]
+    },
     "modules": [
         {
             "schema": "tiger.registry/v1",
@@ -24,7 +148,7 @@
                 "help",
                 "knowledge-base"
             ],
-            "category": "Content",
+            "category": "content",
             "license": "MIT",
             "pricing": {
                 "model": "free",
@@ -81,11 +205,12 @@
                 "reviewed_at": "2026-07-15",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; theme.json + slug match (theme-grey-mist); TIGER.md present; MIT; release v0.7.0-beta present. Directory media (logo + hero) in media/. Screenshots gallery to follow."
-            }
+            },
+            "category": ""
         },
         {
             "schema": "tiger.registry/v1",
-            "type": "sdk",
+            "type": "developer",
             "slug": "tiger-sdk-aws",
             "module": "Tiger AWS PHP SDK",
             "vendor": "WebTigers",
@@ -104,7 +229,7 @@
                 "storage",
                 "media"
             ],
-            "category": "Developer",
+            "category": "sdks",
             "license": "MIT",
             "pricing": {
                 "model": "free",
@@ -124,7 +249,7 @@
         },
         {
             "schema": "tiger.registry/v1",
-            "type": "sdk",
+            "type": "developer",
             "slug": "tiger-sdk-azure",
             "module": "Tiger Azure PHP SDK",
             "vendor": "WebTigers",
@@ -143,7 +268,7 @@
                 "storage",
                 "media"
             ],
-            "category": "Developer",
+            "category": "sdks",
             "license": "MIT",
             "pricing": {
                 "model": "free",
@@ -163,7 +288,7 @@
         },
         {
             "schema": "tiger.registry/v1",
-            "type": "sdk",
+            "type": "developer",
             "slug": "tiger-sdk-googlecloud",
             "module": "Tiger Google Cloud PHP SDK",
             "vendor": "WebTigers",
@@ -183,7 +308,7 @@
                 "storage",
                 "media"
             ],
-            "category": "Developer",
+            "category": "sdks",
             "license": "MIT",
             "pricing": {
                 "model": "free",
@@ -203,7 +328,7 @@
         },
         {
             "schema": "tiger.registry/v1",
-            "type": "code",
+            "type": "developer",
             "slug": "code-utils",
             "module": "Tiger Utility Snippets",
             "vendor": "WebTigers",
@@ -222,7 +347,7 @@
                 "utilities",
                 "php"
             ],
-            "category": "Developer",
+            "category": "snippets",
             "license": "MIT",
             "pricing": {
                 "model": "free",
@@ -242,7 +367,7 @@
         },
         {
             "schema": "tiger.registry/v1",
-            "type": "plugin",
+            "type": "app",
             "slug": "tigershield",
             "module": "TigerShield",
             "vendor": "WebTigers",
@@ -265,7 +390,7 @@
                 "login-protection",
                 "brute-force"
             ],
-            "category": "Security",
+            "category": "security",
             "license": "BSD-3-Clause",
             "pricing": {
                 "model": "free",

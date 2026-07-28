@@ -1,0 +1,25 @@
+{
+  "schema": "tiger.taxonomy/v1",
+  "_comment": "The canonical module taxonomy for the Tiger directory + WebTigers Marketplace. WebTigers owns this file — a listing's `type` and `category` must be one of the ids below (enforced at compile/review). Developers PICK from this list; they cannot invent new types/categories. For the long tail, a listing's `keywords` are FREE-FORM (any string) and power search only, never the filters. This file is folded into data/index.json by scripts/compile-index.php so a single fetch gives Tiger both the catalog and its filter vocabulary.",
+
+  "types": [
+    { "id": "theme",     "label": "Themes",    "icon": "fa-palette", "order": 10, "blurb": "The look & feel — a whole view layer." },
+    { "id": "app",       "label": "Apps",      "icon": "fa-cube",    "order": 20, "blurb": "Features & products you add to your site." },
+    { "id": "developer", "label": "Developer", "icon": "fa-code",    "order": 30, "blurb": "SDKs, code snippets, libraries & dev tools." }
+  ],
+
+  "categories": [
+    { "id": "commerce",     "label": "Commerce",      "types": ["app"],              "order": 10 },
+    { "id": "marketing",    "label": "Marketing",     "types": ["app"],              "order": 20 },
+    { "id": "membership",   "label": "Membership",    "types": ["app"],              "order": 30 },
+    { "id": "content",      "label": "Content",       "types": ["app"],              "order": 40 },
+    { "id": "crm",          "label": "CRM & Support", "types": ["app"],              "order": 50 },
+    { "id": "security",     "label": "Security",      "types": ["app"],              "order": 60 },
+    { "id": "operations",   "label": "Operations",    "types": ["app"],              "order": 70 },
+    { "id": "ai",           "label": "AI",            "types": ["app"],              "order": 80 },
+    { "id": "integrations", "label": "Integrations",  "types": ["app", "developer"], "order": 90 },
+    { "id": "sdks",         "label": "SDKs",          "types": ["developer"],        "order": 100 },
+    { "id": "snippets",     "label": "Snippets",      "types": ["developer"],        "order": 110 },
+    { "id": "tools",        "label": "Tools",         "types": ["developer"],        "order": 120 }
+  ]
+}

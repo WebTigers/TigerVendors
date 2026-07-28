@@ -1,6 +1,6 @@
 {
   "schema": "tiger.registry/v1",
-  "type": "sdk",
+  "type": "developer",
   "slug": "tiger-sdk-googlecloud",
   "module": "Tiger Google Cloud PHP SDK",
   "vendor": "WebTigers",
@@ -20,7 +20,7 @@
     "storage",
     "media"
   ],
-  "category": "Developer",
+  "category": "sdks",
   "license": "MIT",
   "pricing": {
     "model": "free",

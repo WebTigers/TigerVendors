@@ -4,62 +4,200 @@
   "title": "Tiger Vendor Registry listing (v1)",
   "description": "One file per module at data/<GitHubOrg>_<GitHubRepo>.json. Thin metadata that points at the module's public repo; the rich description lives in the repo's TIGER.md.",
   "type": "object",
-  "required": ["schema", "slug", "module", "vendor", "repository", "version", "description", "license", "pricing"],
+  "required": [
+    "schema",
+    "slug",
+    "module",
+    "vendor",
+    "repository",
+    "version",
+    "description",
+    "license",
+    "pricing"
+  ],
   "additionalProperties": false,
   "properties": {
-    "schema":     { "const": "tiger.registry/v1" },
-    "slug":       { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$", "description": "Module install slug. For a code module == module.json slug; for a theme == 'theme-' + theme.json key (e.g. theme-grey-mist). Not the repo name." },
-    "type":       { "type": "string", "enum": ["theme", "app", "plugin", "code"], "description": "Searchable kind label. 'theme' = presentation, 'app' = a large feature/product, 'plugin' = a small tweak, 'code' = a shareable code snippet activated in the Code Area. Tiger detects real capabilities (theme.json, migrations/) at activation; this is mainly a directory filter. Optional; defaults to 'plugin' in the index if omitted." },
-    "module":     { "type": "string", "maxLength": 120, "description": "Human module name." },
-    "vendor":     { "type": "string", "maxLength": 120, "description": "Vendor / author name." },
-
-    "repository": { "type": "string", "format": "uri", "pattern": "^https://github\\.com/[^/]+/[^/]+/?$", "description": "PUBLIC GitHub repo. Private repos are rejected." },
-    "website":    { "type": "string", "format": "uri" },
-    "contact":    { "type": "string", "description": "Support email or URL." },
-
-    "version":    { "type": "string", "description": "Latest vetted version." },
-    "ref":        { "type": "string", "description": "The pinned, reviewed release tag/SHA (what installs)." },
-
-    "logo":       { "type": "string", "description": "Square logo. A repo-relative path (media/logo.jpg — resolved against the pinned ref, reusable verbatim in README.md) or a full raw URL." },
-    "hero":       { "type": "string", "description": "Wide hero/banner image. Repo-relative path or a full raw URL." },
-    "screenshots":{ "type": "array", "items": { "type": "string" }, "maxItems": 12, "description": "Gallery images for the directory lightbox — repo-relative paths (media/screenshot-01.jpg, resolved against the ref) or full raw URLs. Images live in the module's own repo; the registry only points at them." },
-    "video":      { "description": "Optional demo video, opened in the directory lightbox. A repo-relative .mp4/.webm (self-hosted) or full video URL plays inline; a YouTube/Vimeo link is embedded LAZILY (loads only on click, via youtube-nocookie). Object form adds a repo-hosted `poster` so the card loads no third-party thumbnail.", "oneOf": [ { "type": "string" }, { "type": "object", "additionalProperties": false, "required": ["src"], "properties": { "src": { "type": "string" }, "poster": { "type": "string" } } } ] },
-
-    "description":{ "type": "string", "maxLength": 300, "description": "One-line summary for the search card." },
-    "tiger_md":   { "type": "string", "format": "uri", "description": "Raw URL of the repo's TIGER.md (the 'View more' modal content)." },
-
-    "keywords":   { "type": "array", "items": { "type": "string" }, "maxItems": 12 },
-    "category":   { "type": "string", "description": "Subject-matter DOMAIN (orthogonal to `type`). A theme can still be a Media-domain theme.", "enum": ["Content", "Commerce", "Marketing", "Auth", "Security", "Media", "Developer", "Integration", "Utility", "Other"] },
-    "license":    { "type": "string", "description": "SPDX id or 'Proprietary'. Public code is required; the license may still be proprietary." },
-
+    "schema": {
+      "const": "tiger.registry/v1"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$",
+      "description": "Module install slug. For a code module == module.json slug; for a theme == 'theme-' + theme.json key (e.g. theme-grey-mist). Not the repo name."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "theme",
+        "app",
+        "developer"
+      ],
+      "description": "Top-level directory door (WebTigers-owned taxonomy — see /taxonomy.json). 'theme' = presentation/view layer, 'app' = a feature or product, 'developer' = SDKs, code snippets, libraries & dev tools. Enforced at compile: an unknown type keeps the listing out of the index."
+    },
+    "module": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Human module name."
+    },
+    "vendor": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Vendor / author name."
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/[^/]+/[^/]+/?$",
+      "description": "PUBLIC GitHub repo. Private repos are rejected."
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "contact": {
+      "type": "string",
+      "description": "Support email or URL."
+    },
+    "version": {
+      "type": "string",
+      "description": "Latest vetted version."
+    },
+    "ref": {
+      "type": "string",
+      "description": "The pinned, reviewed release tag/SHA (what installs)."
+    },
+    "logo": {
+      "type": "string",
+      "description": "Square logo. A repo-relative path (media/logo.jpg — resolved against the pinned ref, reusable verbatim in README.md) or a full raw URL."
+    },
+    "hero": {
+      "type": "string",
+      "description": "Wide hero/banner image. Repo-relative path or a full raw URL."
+    },
+    "screenshots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 12,
+      "description": "Gallery images for the directory lightbox — repo-relative paths (media/screenshot-01.jpg, resolved against the ref) or full raw URLs. Images live in the module's own repo; the registry only points at them."
+    },
+    "video": {
+      "description": "Optional demo video, opened in the directory lightbox. A repo-relative .mp4/.webm (self-hosted) or full video URL plays inline; a YouTube/Vimeo link is embedded LAZILY (loads only on click, via youtube-nocookie). Object form adds a repo-hosted `poster` so the card loads no third-party thumbnail.",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "src"
+          ],
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "poster": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 300,
+      "description": "One-line summary for the search card."
+    },
+    "tiger_md": {
+      "type": "string",
+      "format": "uri",
+      "description": "Raw URL of the repo's TIGER.md (the 'View more' modal content)."
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20,
+      "description": "Free-form search tags (any strings) — the long-tail drill-down. NOT validated; they power search only, never the filters."
+    },
+    "category": {
+      "description": "Functional filter(s) — a category id (or array of ids) from the WebTigers-owned taxonomy (/taxonomy.json), scoped to this listing's type (app→commerce/marketing/…, developer→sdks/snippets/tools; integrations spans both). Invalid ids are dropped at compile.",
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX id or 'Proprietary'. Public code is required; the license may still be proprietary."
+    },
     "pricing": {
       "type": "object",
-      "required": ["model"],
+      "required": [
+        "model"
+      ],
       "additionalProperties": false,
       "properties": {
-        "model":   { "type": "string", "enum": ["free", "freemium", "paid"] },
-        "pro_url": { "type": ["string", "null"], "description": "Where to buy the pro tier (if any)." }
+        "model": {
+          "type": "string",
+          "enum": [
+            "free",
+            "freemium",
+            "paid"
+          ]
+        },
+        "pro_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Where to buy the pro tier (if any)."
+        }
       }
     },
     "requires": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "tiger": { "type": "string" },
-        "php":   { "type": "string" }
+        "tiger": {
+          "type": "string"
+        },
+        "php": {
+          "type": "string"
+        }
       }
     },
-
     "review": {
       "type": "object",
       "description": "Set by the tiger-vendor-bot, not the submitter.",
       "additionalProperties": false,
       "properties": {
-        "status":       { "type": "string", "enum": ["pending", "accepted", "rejected"] },
-        "reviewed_ref": { "type": "string" },
-        "reviewed_at":  { "type": "string" },
-        "reviewer":     { "type": "string" },
-        "notes":        { "type": "string" }
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "accepted",
+            "rejected"
+          ]
+        },
+        "reviewed_ref": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
       }
     }
   }
