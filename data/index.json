@@ -1,7 +1,7 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-07-28T08:53:20+00:00",
-    "count": 7,
+    "generated_at": "2026-08-04T19:22:59+00:00",
+    "count": 8,
     "taxonomy": {
         "types": [
             {
@@ -406,6 +406,49 @@
                 "reviewed_at": "2026-07-17",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; module.json present + slug matches; TIGER.md present at v0.6.0-beta; BSD-3-Clause license; passes the deterministic gate (scripts/review.php). First-party WebTigers module."
+            }
+        },
+        {
+            "schema": "tiger.registry/v1",
+            "type": "app",
+            "slug": "tigerssl",
+            "module": "TigerSSL",
+            "vendor": "WebTigers",
+            "repository": "https://github.com/WebTigers/TigerSSL",
+            "website": "https://webtigers.com",
+            "contact": "support@webtigers.com",
+            "version": "0.1.0-beta",
+            "ref": "v0.1.0-beta",
+            "description": "Free, automatic HTTPS for your Tiger server \u2014 Let's Encrypt / ACME certificate issuance + renewal from the admin. Pure-PHP (no certbot/Python), HTTP-01 served natively, auto-renews. For servers you own; stands down where the host manages SSL (cPanel AutoSSL).",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v0.1.0-beta/TIGER.md",
+            "keywords": [
+                "ssl",
+                "tls",
+                "https",
+                "lets-encrypt",
+                "acme",
+                "certbot",
+                "certificate",
+                "easyssl",
+                "encryption",
+                "security"
+            ],
+            "category": "security",
+            "license": "BSD-3-Clause",
+            "pricing": {
+                "model": "free",
+                "pro_url": null
+            },
+            "requires": {
+                "tiger": ">=0.8.0-beta",
+                "php": ">=8.1"
+            },
+            "review": {
+                "status": "accepted",
+                "reviewed_ref": "v0.1.0-beta",
+                "reviewed_at": "2026-08-04",
+                "reviewer": "tiger-vendor-bot",
+                "notes": "Public repo; module.json present + slug matches; TIGER.md present at v0.1.0-beta; BSD-3-Clause license; passes the deterministic gate (scripts/review.php). First-party WebTigers module."
             }
         }
     ]
