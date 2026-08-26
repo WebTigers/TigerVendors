@@ -7,8 +7,8 @@
   "repository": "https://github.com/WebTigers/TigerSdkAws",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "3.389.0",
-  "ref": "3.389.0",
+  "version": "3.393.4",
+  "ref": "3.393.4",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/media/logo.jpg",
   "description": "Adds the AWS SDK for PHP so Tiger can store media in Amazon S3 — with no Composer needed on the server. Install it, activate it, then choose Amazon S3 in Settings → Media → Storage. Mutually exclusive with the Google Cloud and Azure SDK providers (one cloud SDK at a time).",
   "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSdkAws/main/TIGER.md",
@@ -31,9 +31,9 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "3.389.0",
-    "reviewed_at": "2026-07-27",
+    "reviewed_ref": "3.393.4",
+    "reviewed_at": "2026-08-26",
     "reviewer": "webtigers",
-    "notes": "First-party provider module. Vendors aws/aws-sdk-php (Apache-2.0) as a release-asset bundle; ships no controllers/routes — its Bootstrap registers the bundled SDK autoloader, active-only. type:sdk. Mutually exclusive with the Google Cloud / Azure SDK providers via module.json \"conflict\"."
+    "notes": "Public repo; valid manifest + TIGER.md; MIT license; release 3.393.4 present; module layout conforms."
   }
 }

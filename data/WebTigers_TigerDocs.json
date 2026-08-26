@@ -7,12 +7,12 @@
   "repository": "https://github.com/WebTigers/TigerDocs",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "0.7.0-beta",
-  "ref": "v0.7.0-beta",
+  "version": "1.0.0",
+  "ref": "v1.0.0",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/logo.jpg",
   "hero": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/hero.jpg",
   "description": "A public documentation site for your Tiger app — organized, searchable help pages rendered in your active theme.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v0.7.0-beta/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.0/TIGER.md",
   "keywords": [
     "docs",
     "documentation",
@@ -20,7 +20,7 @@
     "knowledge-base"
   ],
   "category": "content",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "pricing": {
     "model": "free",
     "pro_url": null
@@ -31,9 +31,9 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v0.7.0-beta",
-    "reviewed_at": "2026-07-15",
+    "reviewed_ref": "v1.0.0",
+    "reviewed_at": "2026-08-26",
     "reviewer": "tiger-vendor-bot",
-    "notes": "Public repo; valid module.json + TIGER.md; MIT license; release v0.7.0-beta present; module layout conforms."
+    "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
   }
 }

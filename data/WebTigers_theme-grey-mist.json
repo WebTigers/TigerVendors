@@ -7,12 +7,12 @@
   "repository": "https://github.com/WebTigers/theme-grey-mist",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "0.7.0-beta",
-  "ref": "v0.7.0-beta",
+  "version": "1.0.0",
+  "ref": "v1.0.0",
   "logo": "media/logo.jpg",
   "hero": "media/hero.jpg",
   "description": "A free, one-page Bootstrap 5 theme for Tiger — self-contained, zero external dependencies, fully editable CSS/JS.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/theme-grey-mist/v0.7.0-beta/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/theme-grey-mist/v1.0.0/TIGER.md",
   "keywords": [
     "theme",
     "bootstrap",
@@ -33,9 +33,9 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v0.7.0-beta",
-    "reviewed_at": "2026-07-15",
+    "reviewed_ref": "v1.0.0",
+    "reviewed_at": "2026-08-26",
     "reviewer": "tiger-vendor-bot",
-    "notes": "Public repo; theme.json + slug match (theme-grey-mist); TIGER.md present; MIT; release v0.7.0-beta present. Directory media (logo + hero) in media/. Screenshots gallery to follow."
+    "notes": "Public repo; valid manifest + TIGER.md; MIT license; release v1.0.0 present; module layout conforms."
   }
 }

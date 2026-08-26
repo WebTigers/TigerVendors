@@ -7,11 +7,11 @@
   "repository": "https://github.com/WebTigers/TigerSSL",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "0.1.0-beta",
-  "ref": "v0.1.0-beta",
+  "version": "1.0.0",
+  "ref": "v1.0.0",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerSSL/main/media/logo.jpg",
   "description": "Free, automatic HTTPS for your Tiger server — Let's Encrypt / ACME certificate issuance + renewal from the admin. Pure-PHP (no certbot/Python), HTTP-01 served natively, auto-renews. For servers you own; stands down where the host manages SSL (cPanel AutoSSL).",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v0.1.0-beta/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.0/TIGER.md",
   "keywords": [
     "ssl",
     "tls",
@@ -36,9 +36,9 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v0.1.0-beta",
-    "reviewed_at": "2026-08-04",
+    "reviewed_ref": "v1.0.0",
+    "reviewed_at": "2026-08-26",
     "reviewer": "tiger-vendor-bot",
-    "notes": "Public repo; module.json present + slug matches; TIGER.md present at v0.1.0-beta; BSD-3-Clause license; passes the deterministic gate (scripts/review.php). First-party WebTigers module."
+    "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
   }
 }

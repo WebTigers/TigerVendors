@@ -7,11 +7,11 @@
   "repository": "https://github.com/WebTigers/TigerCodeSnippets",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "0.1.0-beta",
-  "ref": "v0.1.0-beta",
+  "version": "1.0.0",
+  "ref": "v1.0.0",
   "logo": "media/logo.jpg",
   "description": "A pack of small, dependency-free PHP helper snippets for the Code Area — slug(), human_bytes(), time_ago() and friends. Install it, read the source, and activate the ones you want.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerCodeSnippets/v0.1.0-beta/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerCodeSnippets/v1.0.0/TIGER.md",
   "keywords": [
     "code",
     "snippets",
@@ -20,7 +20,7 @@
     "php"
   ],
   "category": "snippets",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "pricing": {
     "model": "free",
     "pro_url": null
@@ -31,9 +31,9 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v0.1.0-beta",
-    "reviewed_at": "2026-07-14",
+    "reviewed_ref": "v1.0.0",
+    "reviewed_at": "2026-08-26",
     "reviewer": "tiger-vendor-bot",
-    "notes": "Public repo; valid module.json + TIGER.md at v0.1.0-beta; slug matches (code-utils); MIT license; release v0.1.0-beta present. type:code — a Code Area snippet pack: 6 dependency-free helper snippets in snippets/, each a self-describing tiger:snippet file defining one function_exists-guarded global function; no routes/controllers/schema. Directory media (logo) in media/."
+    "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
   }
 }
