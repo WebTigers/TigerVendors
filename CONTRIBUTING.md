@@ -85,6 +85,38 @@ Pin media to a release `ref` (not `main`) so it matches the reviewed version.
 - Object form adds a **repo-hosted poster** so the card shows no third-party thumbnail:
   `"video": { "src": "https://youtu.be/…", "poster": "media/demo-poster.jpg" }`.
 
+### Translations (optional)
+
+The directory can show your blurb in a reader's own language. You do **not** write the translations
+into your listing — you keep them where your module's other translations already live:
+
+```php
+// languages/es/<yourmodule>.php   (and de, fr, hi, pt … whichever you ship)
+'<your-slug>.listing.description' => 'Tu descripción, traducida.',
+```
+
+The key is `<slug>.listing.description`, matching your module's own key prefix. Then:
+
+```bash
+php scripts/pull-i18n.php data/<Org>_<Repo>.json   # reads your languages/ at the PINNED ref
+php scripts/compile-index.php                      # rebuild the index
+```
+
+That writes a `description_i18n` map onto your listing, which is what ends up in `index.json`.
+
+Three things follow from doing it this way:
+
+- **Your repo stays the single source of truth for your own copy.** The registry never holds a
+  second version of your text that can drift from the one your module ships.
+- **It is pulled from the pinned `ref`, not `main`** — so publishing a translation means cutting a
+  release, exactly like any other change the directory shows.
+- **It is optional.** Ship nothing and your listing keeps its English `description`; every consumer
+  already falls back to it.
+
+The review gate rejects a `description_i18n` entry that is byte-identical to the English
+`description` — that means the wrong copy was edited, not that the text was translated.
+
+
 ## 3. Open the PR
 
 Open a pull request with just that one file. The **`tiger-vendor-bot`** runs a few times a

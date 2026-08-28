@@ -110,6 +110,12 @@
       "maxLength": 300,
       "description": "One-line summary for the search card."
     },
+    "description_i18n": {
+      "type": "object",
+      "description": "Translated blurbs by language code. NOT hand-written: scripts/pull-i18n.php reads the key '<slug>.listing.description' from the module's OWN languages/<loc>/ at the pinned ref, so the module stays the single place its copy is translated and the registry never holds a second copy that can drift. English stays in `description`; a module that ships no translations simply omits this and consumers fall back.",
+      "propertyNames": { "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)?$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
     "tiger_md": {
       "type": "string",
       "format": "uri",

@@ -1,6 +1,6 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-08-26T13:07:46+00:00",
+    "generated_at": "2026-08-28T12:47:45+00:00",
     "count": 8,
     "taxonomy": {
         "types": [
@@ -136,12 +136,12 @@
             "repository": "https://github.com/WebTigers/TigerDocs",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.0",
-            "ref": "v1.0.0",
+            "version": "1.0.1",
+            "ref": "v1.0.1",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/logo.jpg",
             "hero": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/hero.jpg",
             "description": "A public documentation site for your Tiger app \u2014 organized, searchable help pages rendered in your active theme.",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.0/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.1/TIGER.md",
             "keywords": [
                 "docs",
                 "documentation",
@@ -160,10 +160,17 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.0",
-                "reviewed_at": "2026-08-26",
+                "reviewed_ref": "v1.0.1",
+                "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
+            },
+            "description_i18n": {
+                "es": "Un sitio de documentaci\u00f3n p\u00fablico para tu aplicaci\u00f3n Tiger: p\u00e1ginas de ayuda organizadas y con b\u00fasqueda, renderizadas en tu tema activo.",
+                "pt": "Um site de documenta\u00e7\u00e3o p\u00fablico para o seu app Tiger \u2014 p\u00e1ginas de ajuda organizadas e pesquis\u00e1veis, renderizadas no seu tema ativo.",
+                "hi": "\u0906\u092a\u0915\u0947 Tiger \u0910\u092a \u0915\u0947 \u0932\u093f\u090f \u090f\u0915 \u0938\u093e\u0930\u094d\u0935\u091c\u0928\u093f\u0915 \u0926\u0938\u094d\u0924\u093e\u0935\u0947\u091c\u093c\u0940\u0915\u0930\u0923 \u0938\u093e\u0907\u091f \u2014 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093f\u0924, \u0916\u094b\u091c\u0928\u0947 \u092f\u094b\u0917\u094d\u092f \u0938\u0939\u093e\u092f\u0924\u093e \u092a\u0943\u0937\u094d\u0920, \u0906\u092a\u0915\u0940 \u0938\u0915\u094d\u0930\u093f\u092f \u0925\u0940\u092e \u092e\u0947\u0902 \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u0964",
+                "de": "Eine \u00f6ffentliche Dokumentations-Website f\u00fcr Ihre Tiger-App \u2014 strukturierte, durchsuchbare Hilfeseiten, dargestellt in Ihrem aktiven Theme.",
+                "fr": "Un site de documentation public pour votre application Tiger \u2014 des pages d'aide organis\u00e9es et consultables, rendues dans votre th\u00e8me actif."
             }
         },
         {
@@ -374,12 +381,12 @@
             "repository": "https://github.com/WebTigers/TigerShield",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.0",
-            "ref": "v1.0.0",
+            "version": "1.0.1",
+            "ref": "v1.0.1",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/logo.jpg",
             "hero": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/hero.jpg",
             "description": "A plugin-layer web application firewall for Tiger \u2014 CrowdSec malicious-IP blocking, login/brute-force protection, rate limiting, a request WAF, and captcha challenges, all at the PHP layer with no root or daemon. Built for shared hosting.",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.0/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.1/TIGER.md",
             "keywords": [
                 "security",
                 "waf",
@@ -402,10 +409,17 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.0",
-                "reviewed_at": "2026-08-26",
+                "reviewed_ref": "v1.0.1",
+                "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
+            },
+            "description_i18n": {
+                "es": "Un cortafuegos de aplicaciones web a nivel de plugin para Tiger: bloqueo de IP maliciosas con CrowdSec, protecci\u00f3n de inicio de sesi\u00f3n y fuerza bruta, limitaci\u00f3n de tasa, un WAF de peticiones y desaf\u00edos captcha, todo en la capa PHP sin root ni demonio. Dise\u00f1ado para alojamiento compartido.",
+                "pt": "Um firewall de aplica\u00e7\u00e3o web em n\u00edvel de plugin para o Tiger \u2014 bloqueio de IPs maliciosos com CrowdSec, prote\u00e7\u00e3o de login e for\u00e7a bruta, limita\u00e7\u00e3o de taxa, um WAF de requisi\u00e7\u00f5es e desafios captcha, tudo na camada PHP sem root nem daemon. Feito para hospedagem compartilhada.",
+                "hi": "Tiger \u0915\u0947 \u0932\u093f\u090f \u092a\u094d\u0932\u0917\u0907\u0928-\u0938\u094d\u0924\u0930 \u0915\u093e \u0935\u0947\u092c \u090f\u092a\u094d\u0932\u093f\u0915\u0947\u0936\u0928 \u092b\u093c\u093e\u092f\u0930\u0935\u0949\u0932 \u2014 CrowdSec \u0926\u0941\u0930\u094d\u092d\u093e\u0935\u0928\u093e\u092a\u0942\u0930\u094d\u0923-IP \u0905\u0935\u0930\u094b\u0927\u0928, \u0932\u0949\u0917\u093f\u0928/\u092c\u094d\u0930\u0942\u091f-\u092b\u093c\u094b\u0930\u094d\u0938 \u0938\u0941\u0930\u0915\u094d\u0937\u093e, \u0926\u0930 \u0938\u0940\u092e\u093e, \u0905\u0928\u0941\u0930\u094b\u0927 WAF \u0914\u0930 \u0915\u0948\u092a\u094d\u091a\u093e \u091a\u0941\u0928\u094c\u0924\u093f\u092f\u093e\u0901, \u0938\u092c \u0915\u0941\u091b PHP \u092a\u0930\u0924 \u092a\u0930, \u092c\u093f\u0928\u093e root \u092f\u093e \u0921\u0947\u092e\u0949\u0928 \u0915\u0947\u0964 \u0938\u093e\u091d\u093e \u0939\u094b\u0938\u094d\u091f\u093f\u0902\u0917 \u0915\u0947 \u0932\u093f\u090f \u092c\u0928\u093e\u092f\u093e \u0917\u092f\u093e\u0964",
+                "de": "Eine Web Application Firewall auf Plugin-Ebene f\u00fcr Tiger \u2014 CrowdSec-Sperrung sch\u00e4dlicher IPs, Login- und Brute-Force-Schutz, Rate-Limiting, eine Request-WAF und Captcha-Pr\u00fcfungen, alles auf PHP-Ebene ohne Root oder Daemon. F\u00fcr Shared Hosting gebaut.",
+                "fr": "Un pare-feu applicatif web au niveau des plugins pour Tiger \u2014 blocage des IP malveillantes via CrowdSec, protection contre les attaques par force brute, limitation de d\u00e9bit, un WAF de requ\u00eates et des d\u00e9fis captcha, le tout au niveau PHP, sans root ni d\u00e9mon. Con\u00e7u pour l'h\u00e9bergement mutualis\u00e9."
             }
         },
         {
@@ -417,11 +431,11 @@
             "repository": "https://github.com/WebTigers/TigerSSL",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.0",
-            "ref": "v1.0.0",
+            "version": "1.0.1",
+            "ref": "v1.0.1",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerSSL/main/media/logo.jpg",
             "description": "Free, automatic HTTPS for your Tiger server \u2014 Let's Encrypt / ACME certificate issuance + renewal from the admin. Pure-PHP (no certbot/Python), HTTP-01 served natively, auto-renews. For servers you own; stands down where the host manages SSL (cPanel AutoSSL).",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.0/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.1/TIGER.md",
             "keywords": [
                 "ssl",
                 "tls",
@@ -446,10 +460,17 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.0",
-                "reviewed_at": "2026-08-26",
+                "reviewed_ref": "v1.0.1",
+                "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
+            },
+            "description_i18n": {
+                "es": "HTTPS gratuito y autom\u00e1tico para tu servidor Tiger: emisi\u00f3n y renovaci\u00f3n de certificados Let's Encrypt / ACME desde el panel. PHP puro (sin certbot ni Python), HTTP-01 servido de forma nativa, renovaci\u00f3n autom\u00e1tica. Para servidores propios; se desactiva cuando el alojamiento gestiona el SSL (cPanel AutoSSL).",
+                "pt": "HTTPS gratuito e autom\u00e1tico para o seu servidor Tiger \u2014 emiss\u00e3o e renova\u00e7\u00e3o de certificados Let's Encrypt / ACME pelo admin. PHP puro (sem certbot/Python), HTTP-01 servido nativamente, renova\u00e7\u00e3o autom\u00e1tica. Para servidores pr\u00f3prios; recua quando a hospedagem gerencia o SSL (cPanel AutoSSL).",
+                "hi": "\u0906\u092a\u0915\u0947 Tiger \u0938\u0930\u094d\u0935\u0930 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u092b\u093c\u094d\u0924, \u0938\u094d\u0935\u091a\u093e\u0932\u093f\u0924 HTTPS \u2014 \u090f\u0921\u092e\u093f\u0928 \u0938\u0947 Let's Encrypt / ACME \u092a\u094d\u0930\u092e\u093e\u0923\u092a\u0924\u094d\u0930 \u091c\u093e\u0930\u0940 \u0915\u0930\u0928\u093e \u0914\u0930 \u0928\u0935\u0940\u0928\u0940\u0915\u0930\u0923\u0964 \u0936\u0941\u0926\u094d\u0927 PHP (\u0915\u094b\u0908 certbot/Python \u0928\u0939\u0940\u0902), HTTP-01 \u092e\u0942\u0932 \u0930\u0942\u092a \u0938\u0947 \u0938\u0930\u094d\u0935 \u0915\u093f\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948, \u0938\u094d\u0935\u0924\u0903 \u0928\u0935\u0940\u0928\u0940\u0915\u0930\u0923\u0964 \u0905\u092a\u0928\u0947 \u0938\u0930\u094d\u0935\u0930\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f; \u091c\u0939\u093e\u0901 \u0939\u094b\u0938\u094d\u091f SSL \u092a\u094d\u0930\u092c\u0902\u0927\u093f\u0924 \u0915\u0930\u0924\u093e \u0939\u0948 \u0935\u0939\u093e\u0901 \u0928\u093f\u0937\u094d\u0915\u094d\u0930\u093f\u092f \u0930\u0939\u0924\u093e \u0939\u0948 (cPanel AutoSSL)\u0964",
+                "de": "Kostenloses, automatisches HTTPS f\u00fcr Ihren Tiger-Server \u2014 Ausstellung und Erneuerung von Let's-Encrypt-/ACME-Zertifikaten direkt aus der Verwaltung. Reines PHP (kein certbot/Python), HTTP-01 nativ ausgeliefert, erneuert sich automatisch. F\u00fcr eigene Server; tritt zur\u00fcck, wo der Hoster das SSL verwaltet (cPanel AutoSSL).",
+                "fr": "HTTPS gratuit et automatique pour votre serveur Tiger \u2014 \u00e9mission et renouvellement de certificats Let's Encrypt / ACME depuis l'administration. PHP pur (sans certbot ni Python), HTTP-01 servi nativement, renouvellement automatique. Pour vos propres serveurs ; se retire lorsque l'h\u00e9bergeur g\u00e8re le SSL (cPanel AutoSSL)."
             }
         }
     ]

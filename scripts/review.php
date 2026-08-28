@@ -104,6 +104,29 @@ if ($org) {
     }
 }
 
+// --- translated blurbs, if present, must be REAL translations pulled from the module -------------
+// The directory publishes this text on the vendor's behalf, so it has to come from the vendor's own
+// languages/ at the pinned ref (scripts/pull-i18n.php), not be typed into the listing by hand. A
+// value that does not match the module's file is the signal that someone edited the wrong copy.
+if (isset($listing['description_i18n'])) {
+    if (!is_array($listing['description_i18n'])) {
+        $fail('description_i18n must be an object of <locale> => <string>');
+    } else {
+        foreach ($listing['description_i18n'] as $loc => $text) {
+            if (!preg_match('/^[a-z]{2}(-[A-Za-z0-9]+)?$/', (string) $loc)) {
+                $fail("description_i18n: '{$loc}' is not a language code");
+            }
+            if (!is_string($text) || trim($text) === '') {
+                $fail("description_i18n[{$loc}] must be a non-empty string");
+            }
+            if (is_string($text) && trim($text) === trim((string) ($listing['description'] ?? ''))) {
+                $fail("description_i18n[{$loc}] is identical to the English description — untranslated");
+            }
+        }
+        $pass('description_i18n: ' . count($listing['description_i18n']) . ' locale(s)');
+    }
+}
+
 // --- license declared ---
 if (empty($listing['license'])) { $fail('license is required (public code may still be proprietary — declare it)'); }
 else { $pass("license: {$listing['license']}"); }

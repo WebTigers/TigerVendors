@@ -7,12 +7,12 @@
   "repository": "https://github.com/WebTigers/TigerShield",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.0.0",
-  "ref": "v1.0.0",
+  "version": "1.0.1",
+  "ref": "v1.0.1",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/logo.jpg",
   "hero": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/hero.jpg",
   "description": "A plugin-layer web application firewall for Tiger — CrowdSec malicious-IP blocking, login/brute-force protection, rate limiting, a request WAF, and captcha challenges, all at the PHP layer with no root or daemon. Built for shared hosting.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.0/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.1/TIGER.md",
   "keywords": [
     "security",
     "waf",
@@ -35,9 +35,16 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v1.0.0",
-    "reviewed_at": "2026-08-26",
+    "reviewed_ref": "v1.0.1",
+    "reviewed_at": "2026-08-28",
     "reviewer": "tiger-vendor-bot",
     "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
+  },
+  "description_i18n": {
+    "es": "Un cortafuegos de aplicaciones web a nivel de plugin para Tiger: bloqueo de IP maliciosas con CrowdSec, protección de inicio de sesión y fuerza bruta, limitación de tasa, un WAF de peticiones y desafíos captcha, todo en la capa PHP sin root ni demonio. Diseñado para alojamiento compartido.",
+    "pt": "Um firewall de aplicação web em nível de plugin para o Tiger — bloqueio de IPs maliciosos com CrowdSec, proteção de login e força bruta, limitação de taxa, um WAF de requisições e desafios captcha, tudo na camada PHP sem root nem daemon. Feito para hospedagem compartilhada.",
+    "hi": "Tiger के लिए प्लगइन-स्तर का वेब एप्लिकेशन फ़ायरवॉल — CrowdSec दुर्भावनापूर्ण-IP अवरोधन, लॉगिन/ब्रूट-फ़ोर्स सुरक्षा, दर सीमा, अनुरोध WAF और कैप्चा चुनौतियाँ, सब कुछ PHP परत पर, बिना root या डेमॉन के। साझा होस्टिंग के लिए बनाया गया।",
+    "de": "Eine Web Application Firewall auf Plugin-Ebene für Tiger — CrowdSec-Sperrung schädlicher IPs, Login- und Brute-Force-Schutz, Rate-Limiting, eine Request-WAF und Captcha-Prüfungen, alles auf PHP-Ebene ohne Root oder Daemon. Für Shared Hosting gebaut.",
+    "fr": "Un pare-feu applicatif web au niveau des plugins pour Tiger — blocage des IP malveillantes via CrowdSec, protection contre les attaques par force brute, limitation de débit, un WAF de requêtes et des défis captcha, le tout au niveau PHP, sans root ni démon. Conçu pour l'hébergement mutualisé."
   }
 }

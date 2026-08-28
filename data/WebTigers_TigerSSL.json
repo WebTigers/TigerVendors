@@ -7,11 +7,11 @@
   "repository": "https://github.com/WebTigers/TigerSSL",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.0.0",
-  "ref": "v1.0.0",
+  "version": "1.0.1",
+  "ref": "v1.0.1",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerSSL/main/media/logo.jpg",
   "description": "Free, automatic HTTPS for your Tiger server — Let's Encrypt / ACME certificate issuance + renewal from the admin. Pure-PHP (no certbot/Python), HTTP-01 served natively, auto-renews. For servers you own; stands down where the host manages SSL (cPanel AutoSSL).",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.0/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.1/TIGER.md",
   "keywords": [
     "ssl",
     "tls",
@@ -36,9 +36,16 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v1.0.0",
-    "reviewed_at": "2026-08-26",
+    "reviewed_ref": "v1.0.1",
+    "reviewed_at": "2026-08-28",
     "reviewer": "tiger-vendor-bot",
     "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
+  },
+  "description_i18n": {
+    "es": "HTTPS gratuito y automático para tu servidor Tiger: emisión y renovación de certificados Let's Encrypt / ACME desde el panel. PHP puro (sin certbot ni Python), HTTP-01 servido de forma nativa, renovación automática. Para servidores propios; se desactiva cuando el alojamiento gestiona el SSL (cPanel AutoSSL).",
+    "pt": "HTTPS gratuito e automático para o seu servidor Tiger — emissão e renovação de certificados Let's Encrypt / ACME pelo admin. PHP puro (sem certbot/Python), HTTP-01 servido nativamente, renovação automática. Para servidores próprios; recua quando a hospedagem gerencia o SSL (cPanel AutoSSL).",
+    "hi": "आपके Tiger सर्वर के लिए मुफ़्त, स्वचालित HTTPS — एडमिन से Let's Encrypt / ACME प्रमाणपत्र जारी करना और नवीनीकरण। शुद्ध PHP (कोई certbot/Python नहीं), HTTP-01 मूल रूप से सर्व किया जाता है, स्वतः नवीनीकरण। अपने सर्वरों के लिए; जहाँ होस्ट SSL प्रबंधित करता है वहाँ निष्क्रिय रहता है (cPanel AutoSSL)।",
+    "de": "Kostenloses, automatisches HTTPS für Ihren Tiger-Server — Ausstellung und Erneuerung von Let's-Encrypt-/ACME-Zertifikaten direkt aus der Verwaltung. Reines PHP (kein certbot/Python), HTTP-01 nativ ausgeliefert, erneuert sich automatisch. Für eigene Server; tritt zurück, wo der Hoster das SSL verwaltet (cPanel AutoSSL).",
+    "fr": "HTTPS gratuit et automatique pour votre serveur Tiger — émission et renouvellement de certificats Let's Encrypt / ACME depuis l'administration. PHP pur (sans certbot ni Python), HTTP-01 servi nativement, renouvellement automatique. Pour vos propres serveurs ; se retire lorsque l'hébergeur gère le SSL (cPanel AutoSSL)."
   }
 }
