@@ -1,6 +1,6 @@
 {
     "schema": "tiger.registry-index/v1",
-    "generated_at": "2026-09-13T14:50:27+00:00",
+    "generated_at": "2026-09-13T15:51:22+00:00",
     "count": 9,
     "taxonomy": {
         "types": [
@@ -136,12 +136,12 @@
             "repository": "https://github.com/WebTigers/TigerDocs",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.1",
-            "ref": "v1.0.1",
+            "version": "1.0.3",
+            "ref": "v1.0.3",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/logo.jpg",
             "hero": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/hero.jpg",
             "description": "A public documentation site for your Tiger app \u2014 organized, searchable help pages rendered in your active theme.",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.1/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.3/TIGER.md",
             "keywords": [
                 "docs",
                 "documentation",
@@ -160,7 +160,7 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.1",
+                "reviewed_ref": "v1.0.3",
                 "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
@@ -381,10 +381,10 @@
             "repository": "https://github.com/WebTigers/TigerImage",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.2",
-            "ref": "v1.0.2",
+            "version": "1.0.3",
+            "ref": "v1.0.3",
             "description": "Image generation for any agent. Drives the Tiger provider adapters you already use to turn a prompt into pictures, remembers how each one was made so it can be refined, and promotes the keepers into the Media Library. Gives a text-only assistant the ability to illustrate the page it just wrote \u2014 and enforces a hard spend ceiling, per organisation and per access key, before the provider is ever contacted.",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerImage/v1.0.2/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerImage/v1.0.3/TIGER.md",
             "keywords": [
                 "image",
                 "image-generation",
@@ -408,7 +408,7 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.2",
+                "reviewed_ref": "v1.0.3",
                 "reviewed_at": "2026-09-12",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "scripts/review.php passed: public repo; module.json present with a matching slug; TIGER.md present at the pinned ref; BSD-3-Clause. First-party WebTigers module, CI-gated (PHPUnit 8.1-8.5 + JS + manifest), ships all six locales. The AI review half of the bot is still stubbed, so this records the deterministic checks only."
@@ -423,12 +423,12 @@
             "repository": "https://github.com/WebTigers/TigerShield",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.4",
-            "ref": "v1.0.4",
+            "version": "1.0.5",
+            "ref": "v1.0.5",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/logo.jpg",
             "hero": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/hero.jpg",
             "description": "A plugin-layer web application firewall for Tiger \u2014 CrowdSec malicious-IP blocking, login/brute-force protection, rate limiting, a request WAF, and captcha challenges, all at the PHP layer with no root or daemon. Built for shared hosting.",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.4/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.5/TIGER.md",
             "keywords": [
                 "security",
                 "waf",
@@ -451,7 +451,7 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.4",
+                "reviewed_ref": "v1.0.5",
                 "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
@@ -473,11 +473,11 @@
             "repository": "https://github.com/WebTigers/TigerSSL",
             "website": "https://webtigers.com",
             "contact": "support@webtigers.com",
-            "version": "1.0.3",
-            "ref": "v1.0.3",
+            "version": "1.0.4",
+            "ref": "v1.0.4",
             "logo": "https://raw.githubusercontent.com/WebTigers/TigerSSL/main/media/logo.jpg",
             "description": "Free, automatic HTTPS for your Tiger server \u2014 Let's Encrypt / ACME certificate issuance + renewal from the admin. Pure-PHP (no certbot/Python), HTTP-01 served natively, auto-renews. For servers you own; stands down where the host manages SSL (cPanel AutoSSL).",
-            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.3/TIGER.md",
+            "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerSSL/v1.0.4/TIGER.md",
             "keywords": [
                 "ssl",
                 "tls",
@@ -502,7 +502,7 @@
             },
             "review": {
                 "status": "accepted",
-                "reviewed_ref": "v1.0.3",
+                "reviewed_ref": "v1.0.4",
                 "reviewed_at": "2026-08-28",
                 "reviewer": "tiger-vendor-bot",
                 "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."

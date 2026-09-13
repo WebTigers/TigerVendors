@@ -7,12 +7,12 @@
   "repository": "https://github.com/WebTigers/TigerDocs",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.0.1",
-  "ref": "v1.0.1",
+  "version": "1.0.3",
+  "ref": "v1.0.3",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/logo.jpg",
   "hero": "https://raw.githubusercontent.com/WebTigers/TigerDocs/main/media/hero.jpg",
   "description": "A public documentation site for your Tiger app — organized, searchable help pages rendered in your active theme.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.1/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerDocs/v1.0.3/TIGER.md",
   "keywords": [
     "docs",
     "documentation",
@@ -31,7 +31,7 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v1.0.1",
+    "reviewed_ref": "v1.0.3",
     "reviewed_at": "2026-08-28",
     "reviewer": "tiger-vendor-bot",
     "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
