@@ -7,11 +7,11 @@
   "repository": "https://github.com/WebTigers/TigerCodeSnippets",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.0.0",
-  "ref": "v1.0.0",
+  "version": "1.0.1",
+  "ref": "v1.0.1",
   "logo": "media/logo.jpg",
   "description": "A pack of small, dependency-free PHP helper snippets for the Code Area — slug(), human_bytes(), time_ago() and friends. Install it, read the source, and activate the ones you want.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerCodeSnippets/v1.0.0/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerCodeSnippets/v1.0.1/TIGER.md",
   "keywords": [
     "code",
     "snippets",
@@ -31,7 +31,7 @@
   },
   "review": {
     "status": "accepted",
-    "reviewed_ref": "v1.0.0",
+    "reviewed_ref": "v1.0.1",
     "reviewed_at": "2026-08-26",
     "reviewer": "tiger-vendor-bot",
     "notes": "Public repo; valid manifest + TIGER.md; BSD-3-Clause license; release v1.0.0 present; module layout conforms."
