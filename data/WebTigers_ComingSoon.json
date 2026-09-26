@@ -1,0 +1,39 @@
+{
+  "schema": "tiger.registry/v1",
+  "type": "app",
+  "slug": "comingsoon",
+  "module": "ComingSoon",
+  "vendor": "WebTigers",
+  "repository": "https://github.com/WebTigers/ComingSoon",
+  "website": "https://webtigers.com",
+  "contact": "support@webtigers.com",
+  "version": "1.1.0",
+  "ref": "v1.1.0",
+  "description": "A branded, single-page “Coming Soon” landing that a freshly provisioned site serves from the moment DNS resolves until the real site is published. Not a theme and not a site builder — one skinnable holding page, zero-config beyond a preset skin, that turns off automatically the instant a real theme goes live.",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/ComingSoon/v1.1.0/TIGER.md",
+  "keywords": [
+    "coming-soon",
+    "landing",
+    "holding-page",
+    "placeholder",
+    "skins",
+    "tigerinstall"
+  ],
+  "category": "marketing",
+  "license": "BSD-3-Clause",
+  "pricing": {
+    "model": "free",
+    "pro_url": null
+  },
+  "requires": {
+    "tiger": ">=1.0",
+    "php": ">=8.1"
+  },
+  "review": {
+    "status": "accepted",
+    "reviewed_ref": "v1.1.0",
+    "reviewed_at": "2026-09-26",
+    "reviewer": "tiger-vendor-bot",
+    "notes": "First-party WebTigers module; valid manifest + TIGER.md; BSD-3-Clause license; release v1.1.0 present; module layout conforms."
+  }
+}
