@@ -7,10 +7,10 @@
   "repository": "https://github.com/WebTigers/ComingSoon",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.1.0",
-  "ref": "v1.1.0",
+  "version": "1.2.0",
+  "ref": "v1.2.0",
   "description": "A branded, single-page “Coming Soon” landing that a freshly provisioned site serves from the moment DNS resolves until the real site is published. Not a theme and not a site builder — one skinnable holding page, zero-config beyond a preset skin, that turns off automatically the instant a real theme goes live.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/ComingSoon/v1.1.0/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/ComingSoon/v1.2.0/TIGER.md",
   "keywords": [
     "coming-soon",
     "landing",

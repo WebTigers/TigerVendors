@@ -68,7 +68,14 @@ if (preg_match('~^https://github\.com/([^/]+)/([^/]+?)/?$~', (string) ($listing[
 // Manifest detection is PRESENCE-based, not type-based: a code module ships module.json;
 // a theme ships theme.json (its module slug is 'theme-' + the manifest key). We accept
 // whichever exists — the listing's `type` is only a search label and never gates this.
-$ref = (string) ($listing['ref'] ?? ($listing['version'] ?? 'main'));
+// The pinned ref: an explicit `ref` (always set by our listings), else the version AS A TAG — WebTigers repos tag
+// with a leading "v", so a bare 1.2.0 must be tried as v1.2.0 or it 404s (TIGER-126) — else main.
+$ref = (string) ($listing['ref'] ?? '');
+if ($ref === '' && !empty($listing['version'])) {
+    $v   = (string) $listing['version'];
+    $ref = preg_match('/^\d/', $v) ? 'v' . $v : $v;
+}
+if ($ref === '') { $ref = 'main'; }
 if ($org) {
     $mj = http(RAW . "/{$org}/{$repo}/{$ref}/module.json");
     $tj = $mj === null ? http(RAW . "/{$org}/{$repo}/{$ref}/theme.json") : null;
