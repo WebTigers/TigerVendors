@@ -1,0 +1,34 @@
+name: Listing freshness
+
+# Every listing must advertise what its repo actually ships: version/ref = the repo's latest release, and every
+# image resolves (TIGER-126). Drift happens when a MODULE repo releases — not when this repo changes — so this also
+# runs daily; a failure names each stale listing.
+on:
+  pull_request:
+    paths:
+      - 'data/*.json'
+      - 'scripts/check-freshness.php'
+  push:
+    branches: [main]
+    paths:
+      - 'data/*.json'
+      - 'scripts/check-freshness.php'
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      - name: Check every listing against its repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: php scripts/check-freshness.php
