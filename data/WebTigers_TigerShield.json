@@ -7,12 +7,12 @@
   "repository": "https://github.com/WebTigers/TigerShield",
   "website": "https://webtigers.com",
   "contact": "support@webtigers.com",
-  "version": "1.0.5",
-  "ref": "v1.0.5",
+  "version": "1.0.7",
+  "ref": "v1.0.7",
   "logo": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/logo.jpg",
   "hero": "https://raw.githubusercontent.com/WebTigers/TigerShield/master/media/hero.jpg",
   "description": "A plugin-layer web application firewall for Tiger — CrowdSec malicious-IP blocking, login/brute-force protection, rate limiting, a request WAF, and captcha challenges, all at the PHP layer with no root or daemon. Built for shared hosting.",
-  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.5/TIGER.md",
+  "tiger_md": "https://raw.githubusercontent.com/WebTigers/TigerShield/v1.0.7/TIGER.md",
   "keywords": [
     "security",
     "waf",
@@ -30,7 +30,7 @@
     "pro_url": null
   },
   "requires": {
-    "tiger": ">=0.8.0-beta",
+    "tiger": ">=1.0.0",
     "php": ">=8.1"
   },
   "review": {
