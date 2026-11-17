@@ -3,11 +3,11 @@ name: Listing freshness
 # Every listing must advertise what its repo actually ships: version/ref = the repo's latest release, and every
 # image resolves (TIGER-126). Drift happens when a MODULE repo releases — not when this repo changes — so this also
 # runs daily; a failure names each stale listing.
+#
+# Runs on EVERY pull request (no path filter) because it is a required check on main: a check limited to some
+# paths never starts on a PR outside them, and a required check that never starts blocks the merge forever.
 on:
   pull_request:
-    paths:
-      - 'data/*.json'
-      - 'scripts/check-freshness.php'
   push:
     branches: [main]
     paths:
