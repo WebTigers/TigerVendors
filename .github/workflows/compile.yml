@@ -17,7 +17,12 @@ jobs:
   compile:
     runs-on: ubuntu-latest
     steps:
+      # Check out with the bot's write DEPLOY KEY: main requires passing checks, and the "Required checks" ruleset
+      # lets only a deploy key bypass that (a user-owned repo can't exempt the Actions app). The GITHUB_TOKEN push
+      # below would be rejected.
       - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.VENDOR_BOT_DEPLOY_KEY }}
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
