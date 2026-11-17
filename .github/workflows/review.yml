@@ -3,10 +3,12 @@ name: Review submissions
 # The tiger-vendor-bot. On every submission PR it runs the deterministic gate (review.php)
 # then, when a model token is configured, the AI quality+safety pass (review-ai.php), and
 # posts the combined findings as a sticky PR comment. A maintainer makes the final merge call.
+#
+# Runs on EVERY pull request (no path filter) because it is a required check on main — a path-filtered required
+# check never starts on a PR outside the paths and blocks it forever. A PR that changes no listing passes quietly
+# and gets no comment.
 on:
   pull_request:
-    paths:
-      - 'data/*.json'
   workflow_dispatch:
 
 permissions:
@@ -36,6 +38,7 @@ jobs:
             echo
             files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- 'data/*.json' | grep -v 'index.json' || true)
             [ -z "$files" ] && echo "_No listing files changed._"
+            [ -n "$files" ] && echo "changed=1" >> "$GITHUB_OUTPUT"
             for f in $files; do
               echo "### \`$f\`"
               echo '```'
@@ -54,6 +57,7 @@ jobs:
           cat report.md
 
       - name: Post findings comment
+        if: steps.review.outputs.changed == '1'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
